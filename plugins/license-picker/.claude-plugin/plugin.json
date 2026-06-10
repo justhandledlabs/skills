@@ -1,0 +1,9 @@
+{
+  "name": "license-picker",
+  "version": "1.0.0",
+  "description": "Generate a LICENSE file for your repo from a chosen license, name, and year.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

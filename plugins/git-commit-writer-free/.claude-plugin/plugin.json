@@ -1,0 +1,9 @@
+{
+  "name": "git-commit-writer-free",
+  "version": "1.0.0",
+  "description": "Generate conventional commit messages from staged git changes.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

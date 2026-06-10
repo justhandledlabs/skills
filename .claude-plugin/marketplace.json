@@ -1,0 +1,110 @@
+{
+  "name": "justhandledlabs-skills",
+  "owner": {
+    "name": "JustHandled Labs",
+    "email": "dev@justhandledlabs.com",
+    "url": "https://justhandledlabs.com"
+  },
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "name": "env-example-generator",
+      "source": "./plugins/env-example-generator",
+      "version": "1.0.0",
+      "description": "Turn a .env into a shareable .env.example with keys preserved and values stripped.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "license-picker",
+      "source": "./plugins/license-picker",
+      "version": "1.0.0",
+      "description": "Generate a LICENSE file for your repo from a chosen license, name, and year.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "markdown-table-formatter",
+      "source": "./plugins/markdown-table-formatter",
+      "version": "1.0.0",
+      "description": "Align messy Markdown tables and normalize their columns, or build a table from CSV.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "robots-sitemap-validator",
+      "source": "./plugins/robots-sitemap-validator",
+      "version": "1.0.0",
+      "description": "Check robots.txt and sitemap.xml for crawl-blocking mistakes.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "todo-fixme-extractor",
+      "source": "./plugins/todo-fixme-extractor",
+      "version": "1.0.0",
+      "description": "List every TODO, FIXME, HACK, XXX, and BUG comment in your code with file and line.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "env-doctor-free",
+      "source": "./plugins/env-doctor-free",
+      "version": "1.0.0",
+      "description": "Diagnose local project environment issues that prevent apps from starting or running.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "git-commit-writer-free",
+      "source": "./plugins/git-commit-writer-free",
+      "version": "1.0.0",
+      "description": "Generate conventional commit messages from staged git changes.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "lead-enricher-free",
+      "source": "./plugins/lead-enricher-free",
+      "version": "1.0.0",
+      "description": "Build enriched B2B lead profiles from a company URL, company name plus domain, or LinkedIn company URL.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "outreach-writer-free",
+      "source": "./plugins/outreach-writer-free",
+      "version": "1.0.0",
+      "description": "Generate personalized B2B cold emails from lead profiles.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "pipeline-reporter-free",
+      "source": "./plugins/pipeline-reporter-free",
+      "version": "1.0.0",
+      "description": "Generate pipeline reports from CRM CSV exports.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
+      "name": "readme-generator-free",
+      "source": "./plugins/readme-generator-free",
+      "version": "1.0.0",
+      "description": "Generate polished README files from project code.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    }
+  ]
+}

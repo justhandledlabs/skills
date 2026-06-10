@@ -1,0 +1,9 @@
+{
+  "name": "lead-enricher-free",
+  "version": "1.0.0",
+  "description": "Build enriched B2B lead profiles from a company URL, company name plus domain, or LinkedIn company URL.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

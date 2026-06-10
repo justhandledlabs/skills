@@ -1,0 +1,9 @@
+{
+  "name": "todo-fixme-extractor",
+  "version": "1.0.0",
+  "description": "List every TODO, FIXME, HACK, XXX, and BUG comment in your code with file and line.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "markdown-table-formatter",
+  "version": "1.0.0",
+  "description": "Align messy Markdown tables and normalize their columns, or build a table from CSV.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "robots-sitemap-validator",
+  "version": "1.0.0",
+  "description": "Check robots.txt and sitemap.xml for crawl-blocking mistakes.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "pipeline-reporter-free",
+  "version": "1.0.0",
+  "description": "Generate pipeline reports from CRM CSV exports.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

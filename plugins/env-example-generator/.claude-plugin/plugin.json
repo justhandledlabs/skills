@@ -1,0 +1,9 @@
+{
+  "name": "env-example-generator",
+  "version": "1.0.0",
+  "description": "Turn a .env into a shareable .env.example with keys preserved and values stripped.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

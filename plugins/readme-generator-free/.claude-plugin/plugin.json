@@ -1,0 +1,9 @@
+{
+  "name": "readme-generator-free",
+  "version": "1.0.0",
+  "description": "Generate polished README files from project code.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

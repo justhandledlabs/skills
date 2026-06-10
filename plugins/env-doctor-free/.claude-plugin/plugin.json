@@ -1,0 +1,9 @@
+{
+  "name": "env-doctor-free",
+  "version": "1.0.0",
+  "description": "Diagnose local project environment issues that prevent apps from starting or running.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}
