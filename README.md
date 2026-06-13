@@ -31,6 +31,7 @@ Or just run `/plugin` to browse and pick.
 | robots-sitemap-validator | Check robots.txt and sitemap.xml for crawl-blocking mistakes. |
 | todo-fixme-extractor | List every TODO, FIXME, HACK, XXX, and BUG comment in your code. |
 | lead-enricher-free | Build a B2B lead profile from a company URL or name. |
+| x-twitter-signal-research-free | Build a read-only B2B signal brief from public X/Twitter evidence. |
 | outreach-writer-free | Write a personalized B2B cold email from a lead profile. |
 | pipeline-reporter-free | Turn a CRM CSV export into a pipeline report. |
 
