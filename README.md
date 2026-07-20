@@ -2,6 +2,8 @@
 
 Focused, inspectable skills for Claude Code and other agents that read the open `SKILL.md` standard. Each skill handles one repeatable job. Read-only by default; preview before write.
 
+[Install README Generator from Agent-Skills.md](https://agent-skills.md/skills/justhandledlabs/skills/readme-generator-free)
+
 **[Browse all 98 skills](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)** · [Agent-readable catalog](https://justhandledlabs.com/llms.txt) · [About JustHandled Labs](https://justhandledlabs.com/)
 
 ## Start with the risk, not the catalog
@@ -30,7 +32,17 @@ Or just run `/plugin` to browse and pick.
 
 ### Other `SKILL.md` agents
 
-Each portable skill lives at `plugins/<skill-name>/skills/<skill-name>/`. Point your agent's skill installer at that folder, or copy the complete folder into the skills directory documented by your agent. Keep bundled `scripts/` and `references/` files beside `SKILL.md`.
+Portable packages live in the conventional top-level `skills/<skill-name>/` directory so registries and compatible agents can discover all 11 skills from one repository URL.
+
+For installers that accept a GitHub source:
+
+```
+npx skills add https://github.com/justhandledlabs/skills
+```
+
+You can also point an installer at one exact folder, such as `skills/readme-generator-free/`, or copy the complete folder into the skills directory documented by your agent. Keep bundled `scripts/` and `references/` files beside `SKILL.md`.
+
+The matching `plugins/<skill-name>/skills/<skill-name>/` paths are retained for Claude Code marketplace compatibility. A repository check prevents the portable packages and plugin copies from drifting apart.
 
 Inspect the source before installation. Skills are instructions with access to whatever tools and permissions you give the agent.
 
