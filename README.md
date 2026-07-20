@@ -1,8 +1,18 @@
-# JustHandled Labs skills
+# JustHandled Labs agent skills
 
-Free agent skills for Claude Code and any agent that reads the open SKILL.md standard. Each one does a single repeatable task. Read-only by default, preview before write.
+Focused, inspectable skills for Claude Code and other agents that read the open `SKILL.md` standard. Each skill handles one repeatable job. Read-only by default; preview before write.
+
+**[Browse all 98 skills](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)** · [Agent-readable catalog](https://justhandledlabs.com/llms.txt) · [About JustHandled Labs](https://justhandledlabs.com/)
+
+## Start with the risk, not the catalog
+
+- Installing community skills? Use the [Skill Injection Scanner](https://justhandledlabs.com/skills/skill-injection-scanner/?utm_source=github&utm_medium=repository&utm_campaign=skill_security) to inspect hidden instructions, obfuscation, secret exfiltration, unsafe commands, and excessive permissions without executing the package.
+- Shipping agent-written code? Use the [AI Code Verification Gate](https://justhandledlabs.com/skills/ai-code-verification-gate/?utm_source=github&utm_medium=repository&utm_campaign=code_verification) to require evidence before generated code is accepted.
+- Automating a smaller developer chore? Start with one of the 11 free skills below.
 
 ## Install
+
+### Claude Code
 
 Add the marketplace once:
 
@@ -17,6 +27,12 @@ Then add the skills you want, for example:
 ```
 
 Or just run `/plugin` to browse and pick.
+
+### Other `SKILL.md` agents
+
+Each portable skill lives at `plugins/<skill-name>/skills/<skill-name>/`. Point your agent's skill installer at that folder, or copy the complete folder into the skills directory documented by your agent. Keep bundled `scripts/` and `references/` files beside `SKILL.md`.
+
+Inspect the source before installation. Skills are instructions with access to whatever tools and permissions you give the agent.
 
 ## The skills
 
@@ -36,10 +52,9 @@ Or just run `/plugin` to browse and pick.
 
 ## Paid editions and the full catalog
 
-Several of these have pro editions, and there are 70+ more skills, on Agensi:
-https://www.agensi.io/creators/justhandled
+Several free skills have deeper paid editions. The full catalog contains 98 focused packages across agent security, verification, DevOps, model resilience, handoffs, writing, sales, and creator workflows.
 
-More about JustHandled Labs: https://justhandledlabs.com
+**[Find the skill for your bottleneck](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)**
 
 ## License
 
