@@ -54,7 +54,7 @@ Inspect the source before installation. Skills are instructions with access to w
 | --- | --- |
 | readme-generator-free | Generate a README from your project's actual code. |
 | env-doctor-free | Diagnose local environment issues that stop a project from starting. |
-| git-commit-writer-free | Write conventional commit messages from your staged changes. |
+| git-commit-writer-free | Write conventional commit messages from your staged changes, then use the [diff-grounded PR description guide](https://justhandledlabs.com/guides/write-pull-request-description-from-git-diff/?utm_source=github&utm_medium=repository&utm_campaign=pr_description_guide) for the reviewer handoff. |
 | env-example-generator | Turn a .env into a shareable .env.example with values stripped. |
 | license-picker | Generate a LICENSE file from a chosen license. |
 | markdown-table-formatter | Align and normalize messy Markdown tables. |
@@ -62,7 +62,7 @@ Inspect the source before installation. Skills are instructions with access to w
 | todo-fixme-extractor | List every TODO, FIXME, HACK, XXX, and BUG comment in your code. |
 | lead-enricher-free | Build a B2B lead profile from a company URL or name. |
 | outreach-writer-free | Write a personalized B2B cold email from a lead profile. |
-| pipeline-reporter-free | Turn a CRM CSV export into a pipeline report. |
+| pipeline-reporter-free | Turn a CRM CSV export into a pipeline report; use the [evidence-led champion mapping guide](https://justhandledlabs.com/guides/identify-sales-champion-from-stakeholder-list/?utm_source=github&utm_medium=repository&utm_campaign=sales_champion_guide) when an account needs stakeholder prioritization. |
 
 ## Paid editions and the full catalog
 
