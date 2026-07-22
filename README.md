@@ -36,7 +36,15 @@ Or just run `/plugin` to browse and pick.
 
 Portable packages live in the conventional top-level `skills/<skill-name>/` directory so registries and compatible agents can discover all 11 skills from one repository URL.
 
-For installers that accept a GitHub source:
+The live domain publishes a standards-based well-known discovery manifest. Preview all 11 free skills without installing them:
+
+```
+npx skills add https://justhandledlabs.com --list
+```
+
+Install from the same domain by dropping `--list`. The [Agent Skills 0.2.0 discovery manifest](https://justhandledlabs.com/.well-known/agent-skills/index.json?utm_source=github&utm_medium=repository&utm_campaign=agent_discovery) includes immutable source URLs and SHA-256 integrity values.
+
+Installers that accept a GitHub source can still use:
 
 ```
 npx skills add https://github.com/justhandledlabs/skills
