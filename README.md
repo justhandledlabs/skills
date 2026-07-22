@@ -10,6 +10,7 @@ Focused, inspectable skills for Claude Code and other agents that read the open 
 
 - Installing community skills? Use the [Skill Injection Scanner](https://justhandledlabs.com/skills/skill-injection-scanner/?utm_source=github&utm_medium=repository&utm_campaign=skill_security) to inspect hidden instructions, obfuscation, secret exfiltration, unsafe commands, and excessive permissions without executing the package.
 - Shipping agent-written code? Use the [AI Code Verification Gate](https://justhandledlabs.com/skills/ai-code-verification-gate/?utm_source=github&utm_medium=repository&utm_campaign=code_verification) to require evidence before generated code is accepted.
+- Local app won't start? Use the [environment-first startup checklist](https://justhandledlabs.com/guides/debug-app-wont-run-locally/?utm_source=github&utm_medium=repository&utm_campaign=env_setup_guide) to check runtimes, dependencies, environment-variable names, ports, and services before changing code, then install `env-doctor-free` below.
 - Automating a smaller developer chore? Start with one of the 11 free skills below.
 
 ## Install
