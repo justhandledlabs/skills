@@ -77,9 +77,7 @@ Return a prioritized checklist, highest impact first:
 2. [Medium] <issue>
    Evidence: `<command output or file reference>`
    Fix:
-   ```bash
-   <copy-pasteable command>
-   ```
+   <Use a `powershell` code fence on Windows or a `bash` code fence on macOS/Linux. Include only the matching OS command.>
 
 **Likely Start Command**
 `<command>`

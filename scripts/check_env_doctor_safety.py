@@ -48,6 +48,12 @@ def main() -> int:
         if marker in combined
     )
 
+    output_shape = skill.split("## Output Shape", 1)[1].split("## Required Quality Cases", 1)[0]
+    if "```bash" in output_shape or "```powershell" in output_shape:
+        problems.append("output template hard-codes one operating system")
+    if output_shape.count("Use a `powershell` code fence on Windows") != 2:
+        problems.append("each example finding must require an OS-specific code fence")
+
     if problems:
         print("Env Doctor safety check failed:")
         for problem in problems:
