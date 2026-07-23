@@ -1,6 +1,7 @@
 ---
 name: env-doctor-free
 description: Diagnose local project environment issues that prevent apps from starting or running. Use when the user says "why won't this run", "check my environment", "env doctor", "diagnose startup issue", "it works on my machine", or asks for help debugging missing dependencies, runtime versions, port conflicts, .env problems, file permissions, or stopped services.
+license: MIT
 metadata:
   version: 1.3.0
   author: JustHandled Labs

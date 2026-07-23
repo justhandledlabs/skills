@@ -1,6 +1,7 @@
 ---
 name: env-example-generator
 description: Turn a .env into a shareable .env.example with keys preserved and values stripped. Use when the user says "make an env example", "redact my .env", or "create .env.example".
+license: MIT
 metadata:
   author: JustHandled Labs
   version: 1.0.0

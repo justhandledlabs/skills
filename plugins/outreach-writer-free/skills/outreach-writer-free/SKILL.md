@@ -1,6 +1,7 @@
 ---
 name: outreach-writer-free
 description: Generate personalized B2B cold emails from lead profiles. Use when the user says "write a cold email", "outreach to", "generate email", "draft prospecting email", or asks to create prospecting outreach from a company name, prospect name, title, and optional trigger event using PAS, MEDDIC, Challenger, or auto-detected positioning. This writes a single email; for multi-lead campaigns and Day 1/3/7 sequences from a CSV, use outreach-writer-pro.
+license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs

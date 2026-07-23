@@ -1,6 +1,7 @@
 ---
 name: license-picker
 description: Generate a LICENSE file for your repo from a chosen license, name, and year. Use when the user says "add a license to my project", "create a LICENSE file", or "which open source license".
+license: MIT
 metadata:
   author: JustHandled Labs
   version: 1.0.0
