@@ -20,7 +20,7 @@ def main() -> int:
     combined = f"{skill}\n{checks}"
 
     required = {
-        "v1.2 metadata": "version: 1.2.0",
+        "v1.3 metadata": "version: 1.3.0",
         "explicit stop approval": "explicit approval",
         "Windows ownership inspection": "Get-Process",
         "POSIX ownership inspection": "ps -p <PID>",
