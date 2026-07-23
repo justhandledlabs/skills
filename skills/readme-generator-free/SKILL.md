@@ -1,6 +1,7 @@
 ---
 name: readme-generator-free
 description: Generate polished README files from project code. Use when the user says "generate readme", "create README", "write project documentation", "make a readme", or asks for README generation, project documentation, installation docs, usage docs, API docs, badges, or repository onboarding documentation derived from an existing codebase.
+license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs

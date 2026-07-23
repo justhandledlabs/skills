@@ -1,6 +1,7 @@
 ---
 name: lead-enricher-free
 description: Build enriched B2B lead profiles from a company URL, company name plus domain, or LinkedIn company URL. Use when the user says "enrich this company", "find decision makers at", "who works at", "build a lead profile", or asks for company enrichment, decision-maker discovery, estimated business email patterns, recent buying signals, funding stage, company size, industry, or tech stack research. This enriches one company at a time; for batch lists, email verification, scoring, and CRM sync, use lead-enricher-pro.
+license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs

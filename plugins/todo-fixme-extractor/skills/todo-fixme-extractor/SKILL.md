@@ -1,6 +1,7 @@
 ---
 name: todo-fixme-extractor
 description: List every TODO, FIXME, HACK, XXX, and BUG comment in your code with file and line. Use when the user says "list the TODOs in my repo", "find tech debt comments", or "where are the FIXMEs".
+license: MIT
 metadata:
   author: JustHandled Labs
   version: 1.0.0

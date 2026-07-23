@@ -1,6 +1,7 @@
 ---
 name: pipeline-reporter-free
 description: Generate pipeline reports from CRM CSV exports. Use when the user says "analyze pipeline", "generate pipeline report", "forecast from CSV", "sales report", or asks for a sales pipeline summary, weighted forecast, stage forecast, rep performance, opportunity analysis, or CRM export review from deal/opportunity CSV data. This is the single-report, no-CRM-connection version; for 12-month forecasting, CRM API connections, PDF export, and scheduled reports, use pipeline-reporter-pro.
+license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs

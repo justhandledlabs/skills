@@ -1,6 +1,7 @@
 ---
 name: robots-sitemap-validator
 description: Check robots.txt and sitemap.xml for crawl-blocking mistakes. Use when the user says "check my robots.txt", "validate my sitemap", or "is my site crawlable".
+license: MIT
 metadata:
   author: JustHandled Labs
   version: 1.0.0

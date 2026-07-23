@@ -1,6 +1,7 @@
 ---
 name: git-commit-writer-free
 description: Generate conventional commit messages from staged git changes. Use when the user asks to write commit message, generate commit, what should my commit say, or after the user runs git add and wants a commit message for staged files.
+license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs

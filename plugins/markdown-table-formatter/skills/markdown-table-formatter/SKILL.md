@@ -1,6 +1,7 @@
 ---
 name: markdown-table-formatter
 description: Align messy Markdown tables and normalize their columns, or build a table from CSV. Use when the user says "fix my markdown table", "align this table", or "csv to markdown table".
+license: MIT
 metadata:
   author: JustHandled Labs
   version: 1.0.0
