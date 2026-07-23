@@ -55,8 +55,8 @@
     {
       "name": "env-doctor-free",
       "source": "./plugins/env-doctor-free",
-      "version": "1.0.0",
-      "description": "Diagnose local project environment issues that prevent apps from starting or running.",
+      "version": "1.2.0",
+      "description": "Diagnose local startup issues with secret-safe env checks and non-destructive port inspection.",
       "author": {
         "name": "JustHandled Labs"
       }

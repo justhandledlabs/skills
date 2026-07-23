@@ -16,3 +16,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify portable and plugin skill copies match
         run: python scripts/check_skill_mirrors.py
+      - name: Verify Env Doctor safety contract
+        run: python scripts/check_env_doctor_safety.py

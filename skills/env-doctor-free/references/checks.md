@@ -9,7 +9,7 @@ Run these before changing application code:
 - Identify project files: `package.json`, `requirements.txt`, `pyproject.toml`, `go.mod`, `Dockerfile`, `docker-compose.yml`.
 - Record runtime versions: `node --version`, `npm --version`, `python --version`, `python3 --version`, `go version`, `docker --version`.
 - Check ports: `3000`, `3001`, `5000`, `8000`, `8080`.
-- Compare `.env.example` against `.env`.
+- Compare `.env.example` key names against `.env` key names without displaying or retaining values.
 - Verify project write access.
 - Identify service dependencies: Postgres, Redis, MySQL.
 
@@ -30,7 +30,7 @@ Common findings and fixes:
 
 - Missing `node_modules/`: suggest `npm install`.
 - Package manager mismatch: use the lockfile to choose `npm install`, `pnpm install`, `yarn install`, or `bun install`.
-- Port `3000` in use: suggest `lsof -i :3000` and, on Windows, `Get-NetTCPConnection -LocalPort 3000`.
+- Port `3000` in use: inspect the listener and identify its owner. Do not stop it unless the user confirms that exact process and explicitly approves the stop.
 - Missing `.env`: if `.env.example` exists, suggest copying it and filling required values.
 
 ## Python Checklist
@@ -100,25 +100,29 @@ Common ports:
 - `8000`: Django, Python HTTP servers, Go APIs
 - `8080`: Docker, Go, Java-style dev servers
 
-Commands:
+Inspection commands for macOS/Linux:
 
 ```bash
-lsof -i :3000
-lsof -i :3001
-lsof -i :5000
-lsof -i :8000
-lsof -i :8080
+lsof -nP -iTCP:3000 -sTCP:LISTEN
+lsof -nP -iTCP:3001 -sTCP:LISTEN
+lsof -nP -iTCP:5000 -sTCP:LISTEN
+lsof -nP -iTCP:8000 -sTCP:LISTEN
+lsof -nP -iTCP:8080 -sTCP:LISTEN
+ps -p <PID> -o pid=,ppid=,user=,command=
 ```
 
-Windows PowerShell:
+Inspection commands for Windows PowerShell:
 
 ```powershell
-Get-NetTCPConnection -LocalPort 3000
-Get-NetTCPConnection -LocalPort 3001
-Get-NetTCPConnection -LocalPort 5000
-Get-NetTCPConnection -LocalPort 8000
-Get-NetTCPConnection -LocalPort 8080
+Get-NetTCPConnection -LocalPort 3000 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,State,OwningProcess
+Get-NetTCPConnection -LocalPort 3001 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,State,OwningProcess
+Get-NetTCPConnection -LocalPort 5000 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,State,OwningProcess
+Get-NetTCPConnection -LocalPort 8000 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,State,OwningProcess
+Get-NetTCPConnection -LocalPort 8080 -ErrorAction SilentlyContinue | Select-Object LocalAddress,LocalPort,State,OwningProcess
+Get-Process -Id <PID> | Select-Object Id,ProcessName,Path
 ```
+
+Stopping a process is not part of diagnosis. Prefer the application's documented stop command, `Ctrl+C` in the owning terminal, or a targeted service stop. If the user asks for remediation, first confirm the exact PID and executable or service. A normal targeted stop such as `kill <PID>` or `Stop-Process -Id <PID>` still requires explicit approval. Never default to `kill -9`, `Stop-Process -Force`, or a broad process-name kill; force requires a failed normal stop and separate explicit approval.
 
 ## Service Checks
 
@@ -164,6 +168,15 @@ docker compose up -d mysql
 ## .env Validation Rules
 
 Compare `.env.example` keys to `.env` keys. Treat variables with empty values as missing unless the example clearly documents them as optional.
+
+Secret-safety rules:
+
+- Treat all text after the first `=` as sensitive, even for apparently harmless or fake values.
+- Extract only normalized key names and an empty/present state. Discard values immediately.
+- Never print raw `.env` lines or include values in evidence, findings, summaries, logs, or suggested commands.
+- Never use `cat .env`, `Get-Content .env`, or unredacted `grep` output.
+- If a tool unexpectedly returns a value, redact it and do not repeat it.
+- Refer to a missing or empty item only by key name, for example: `DATABASE_URL: missing`.
 
 Always flag these as high priority when required by `.env.example` and absent from `.env`:
 
