@@ -80,6 +80,15 @@
       }
     },
     {
+      "name": "x-twitter-signal-research-free",
+      "source": "./plugins/x-twitter-signal-research-free",
+      "version": "1.0.0",
+      "description": "Build read-only B2B signal briefs from public X/Twitter evidence for lead research and outreach.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
+    },
+    {
       "name": "outreach-writer-free",
       "source": "./plugins/outreach-writer-free",
       "version": "1.0.0",

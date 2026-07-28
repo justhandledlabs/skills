@@ -69,6 +69,7 @@ Inspect the source before installation. Skills are instructions with access to w
 | robots-sitemap-validator | Check robots.txt and sitemap.xml for crawl-blocking mistakes. |
 | todo-fixme-extractor | List every TODO, FIXME, HACK, XXX, and BUG comment in your code. |
 | lead-enricher-free | Build a B2B lead profile from a company URL or name. |
+| x-twitter-signal-research-free | Build a read-only B2B signal brief from public X/Twitter evidence. |
 | outreach-writer-free | Write a personalized B2B cold email from a lead profile. |
 | pipeline-reporter-free | Turn a CRM CSV export into a pipeline report; use the [evidence-led champion mapping guide](https://justhandledlabs.com/guides/identify-sales-champion-from-stakeholder-list/?utm_source=github&utm_medium=repository&utm_campaign=sales_champion_guide) when an account needs stakeholder prioritization. |
 
