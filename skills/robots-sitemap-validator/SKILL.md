@@ -4,7 +4,7 @@ description: Check robots.txt and sitemap.xml for crawl-blocking mistakes. Use w
 license: MIT
 metadata:
   author: JustHandled Labs
-  version: 1.0.0
+  version: 1.0.2
   price: $0
   credits: 0
   triggers:
@@ -31,7 +31,10 @@ Detect common local robots.txt and sitemap.xml mistakes that can hurt crawling. 
 
 ## Verification
 
-Run tests/test_robots_sitemap.py. Risky fixture must produce findings and clean fixture must produce zero findings.
+Run `python scripts/scan_robots_sitemap.py --help` first. Then use a disposable folder to verify both outcomes:
+
+1. A `robots.txt` containing `User-agent: *` and `Disallow: /` must report `RSV001`.
+2. A `robots.txt` with an absolute `Sitemap:` URL plus a matching, well-formed local `sitemap.xml` must produce zero findings.
 
 ## Commercial Terms
 
