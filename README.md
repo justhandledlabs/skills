@@ -4,7 +4,7 @@ Focused, inspectable skills for Claude Code and other agents that read the open 
 
 [Install README Generator from Agent-Skills.md](https://agent-skills.md/skills/justhandledlabs/skills/readme-generator-free)
 
-**[Browse all 98 skills](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)** · [Agent-readable catalog](https://justhandledlabs.com/llms.txt) · [About JustHandled Labs](https://justhandledlabs.com/)
+**[Browse the complete skill catalog](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)** · [Agent-readable catalog](https://justhandledlabs.com/llms.txt) · [About JustHandled Labs](https://justhandledlabs.com/)
 
 ## Start with the risk, not the catalog
 
@@ -74,7 +74,7 @@ Inspect the source before installation. Skills are instructions with access to w
 
 ## Paid editions and the full catalog
 
-Several free skills have deeper paid editions. The full catalog contains 98 focused packages across agent security, verification, DevOps, model resilience, handoffs, writing, sales, and creator workflows.
+Several free skills have deeper paid editions. The full catalog contains focused packages across agent security, verification, DevOps, model resilience, handoffs, writing, sales, and creator workflows.
 
 **[Find the skill for your bottleneck](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)**
 
