@@ -2,6 +2,8 @@
 
 Focused, inspectable skills for Claude Code and other agents that read the open `SKILL.md` standard. Each skill handles one repeatable job. Read-only by default; preview before write.
 
+[![skills.sh installs](https://skills.sh/b/justhandledlabs/skills)](https://skills.sh/justhandledlabs/skills)
+
 [Install README Generator from Agent-Skills.md](https://agent-skills.md/skills/justhandledlabs/skills/readme-generator-free)
 
 **[Browse the complete skill catalog](https://justhandledlabs.com/skills/?utm_source=github&utm_medium=repository&utm_campaign=free_skills)** · [Agent-readable catalog](https://justhandledlabs.com/llms.txt) · [About JustHandled Labs](https://justhandledlabs.com/)
