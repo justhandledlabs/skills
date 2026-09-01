@@ -105,6 +105,15 @@
       "author": {
         "name": "JustHandled Labs"
       }
+    },
+    {
+      "name": "ubrowser-setup-validator",
+      "source": "./plugins/ubrowser-setup-validator",
+      "version": "1.0.0",
+      "description": "Install, validate, or diagnose the independent upstream uBrowser MCP runtime.",
+      "author": {
+        "name": "JustHandled Labs"
+      }
     }
   ]
 }

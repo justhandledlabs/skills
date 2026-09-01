@@ -12,7 +12,7 @@ Focused, inspectable skills for Claude Code and other agents that read the open 
 - Shipping agent-written code? Use the [AI Code Verification Gate](https://justhandledlabs.com/skills/ai-code-verification-gate/?utm_source=github&utm_medium=repository&utm_campaign=code_verification) to require evidence before generated code is accepted.
 - GitHub Actions failed? Use the [first-error CI diagnosis guide](https://justhandledlabs.com/guides/fix-github-actions-failed-workflow/?utm_source=github&utm_medium=repository&utm_campaign=ci_failure_guide) to isolate the first failing job and step, check the matching workflow and repository state, and verify one bounded fix.
 - Local app won't start? Use the [environment-first startup checklist](https://justhandledlabs.com/guides/debug-app-wont-run-locally/?utm_source=github&utm_medium=repository&utm_campaign=env_setup_guide) to check runtimes, dependencies, environment-variable names, ports, and services before changing code, then install `env-doctor-free` below.
-- Automating a smaller developer chore? Start with one of the 11 free skills below.
+- Automating a smaller developer chore? Start with one of the 12 free skills below.
 
 ## Install
 
@@ -34,9 +34,9 @@ Or just run `/plugin` to browse and pick.
 
 ### Other `SKILL.md` agents
 
-Portable packages live in the conventional top-level `skills/<skill-name>/` directory so registries and compatible agents can discover all 11 skills from one repository URL.
+Portable packages live in the conventional top-level `skills/<skill-name>/` directory so registries and compatible agents can discover all 12 skills from one repository URL.
 
-The live domain publishes a standards-based well-known discovery manifest. Preview all 11 free skills without installing them:
+The live domain publishes a standards-based well-known discovery manifest. Preview all 12 free skills without installing them:
 
 ```
 npx skills add https://justhandledlabs.com --list
@@ -71,6 +71,7 @@ Inspect the source before installation. Skills are instructions with access to w
 | lead-enricher-free | Build a B2B lead profile from a company URL or name. |
 | outreach-writer-free | Write a personalized B2B cold email from a lead profile. |
 | pipeline-reporter-free | Turn a CRM CSV export into a pipeline report; use the [evidence-led champion mapping guide](https://justhandledlabs.com/guides/identify-sales-champion-from-stakeholder-list/?utm_source=github&utm_medium=repository&utm_campaign=sales_champion_guide) when an account needs stakeholder prioritization. |
+| ubrowser-setup-validator | Install or diagnose the independent uBrowser MCP runtime, verify its pinned revision and 11-tool surface, and return READY or REVIEW evidence. |
 
 ## Paid editions and the full catalog
 
