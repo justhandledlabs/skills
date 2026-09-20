@@ -1,0 +1,5 @@
+# Preserve digest-anchored fixture and release-record bytes on Windows checkouts.
+skills/package-manifest-check/examples/expected.json text eol=lf
+plugins/package-manifest-check/skills/package-manifest-check/examples/expected.json text eol=lf
+releases/package-manifest-check/v1.0.0/*.json text eol=lf
+releases/package-manifest-check/v1.0.0/*.txt text eol=lf
