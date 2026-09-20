@@ -1,0 +1,14 @@
+{
+  "files": {
+    "package-manifest-check/LICENSE.md": "3a6910b8b3cdefc16e4c22a3063cf277ea0cf7e3e5fd74c1b08195ef5f1a3e44",
+    "package-manifest-check/SKILL.md": "68a7d4bdf4fb82df751130ff11d7356af4ee4f0bad308dc661aa47baa05a6766",
+    "package-manifest-check/examples/changed.zip": "b892b56b102e36d10c38e87b747406db10fe2323a360ea7b0ccccb8d0effafda",
+    "package-manifest-check/examples/expected.json": "a15c1fdef8d8b49cf63f516212ac5fcced81e5f745f80fe1b69d34bb98a63b64",
+    "package-manifest-check/examples/matching.zip": "35d587d231e46d0fda5eecb1fc19609b5f32c56ab72434375a0f8d9848ca2d4e",
+    "package-manifest-check/references/contract.md": "d95e88e4a79a27e76284a53276396b546763d1bfaf49b48fcd12e4d5565ef62e",
+    "package-manifest-check/references/first-use.md": "98fd94b37abaa307bf48864776753cbbe53c0ea1c135bb6c3c2881c1e6645bc1",
+    "package-manifest-check/scripts/check_package.py": "d6235a6a6adba00dd09e37f293982ee07c7db6881a44a552b958c333fab09d59",
+    "package-manifest-check/tests/test_check.py": "bdf4027967d0e01b205aa367a58dd2f74335543279c44ac6b3f22986ff4b313a"
+  },
+  "schema_version": 1
+}

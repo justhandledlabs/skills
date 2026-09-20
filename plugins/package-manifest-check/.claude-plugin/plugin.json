@@ -1,0 +1,9 @@
+{
+  "name": "package-manifest-check",
+  "version": "1.0.0",
+  "description": "Compare ZIP file bytes with a separately trusted manifest; report missing, added and changed files without running package code.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

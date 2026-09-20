@@ -14,7 +14,7 @@ Focused, inspectable skills for Claude Code and other agents that read the open 
 - Shipping agent-written code? Use the [AI Code Verification Gate](https://justhandledlabs.com/skills/ai-code-verification-gate/?utm_source=github&utm_medium=repository&utm_campaign=code_verification) to require evidence before generated code is accepted.
 - GitHub Actions failed? Use the [first-error CI diagnosis guide](https://justhandledlabs.com/guides/fix-github-actions-failed-workflow/?utm_source=github&utm_medium=repository&utm_campaign=ci_failure_guide) to isolate the first failing job and step, check the matching workflow and repository state, and verify one bounded fix.
 - Local app won't start? Use the [environment-first startup checklist](https://justhandledlabs.com/guides/debug-app-wont-run-locally/?utm_source=github&utm_medium=repository&utm_campaign=env_setup_guide) to check runtimes, dependencies, environment-variable names, ports, and services before changing code, then install `env-doctor-free` below.
-- Automating a smaller developer chore? Start with one of the 12 free skills below.
+- Automating a smaller developer chore? Start with one of the free skills below.
 
 ## Install
 
@@ -36,9 +36,9 @@ Or just run `/plugin` to browse and pick.
 
 ### Other `SKILL.md` agents
 
-Portable packages live in the conventional top-level `skills/<skill-name>/` directory so registries and compatible agents can discover all 12 skills from one repository URL.
+Portable packages live in the conventional top-level `skills/<skill-name>/` directory so registries and compatible agents can discover the portable skills from one repository URL.
 
-The live domain publishes a standards-based well-known discovery manifest. Preview all 12 free skills without installing them:
+The live domain publishes a standards-based well-known discovery manifest. Preview the domain-published free skills without installing them:
 
 ```
 npx skills add https://justhandledlabs.com --list
@@ -62,6 +62,7 @@ Inspect the source before installation. Skills are instructions with access to w
 
 | Skill | What it does |
 | --- | --- |
+| package-manifest-check | Compare a downloaded ZIP against trusted file hashes; [versioned release and manifest](https://github.com/justhandledlabs/skills/releases/tag/package-manifest-check-v1.0.0). |
 | readme-generator-free | Generate a README from your project's actual code. |
 | env-doctor-free | Diagnose local environment issues that stop a project from starting. |
 | git-commit-writer-free | Write conventional commit messages from your staged changes, then use the [diff-grounded PR description guide](https://justhandledlabs.com/guides/write-pull-request-description-from-git-diff/?utm_source=github&utm_medium=repository&utm_campaign=pr_description_guide) for the reviewer handoff. |

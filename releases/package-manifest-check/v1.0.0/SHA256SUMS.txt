@@ -1,0 +1,2 @@
+ae3aef2ac3bdc13843dbc1ebbca8c5b1e137cceaeb8d6eb1962edb56ff56706b  package-manifest-check-v1.0.0.zip
+5dd760a4a8a23308a463630960bea5f3abaa7ccbd65e20b840b79addc5553323  package-manifest-check-v1.0.0.manifest.json
