@@ -33,6 +33,6 @@ Transform a .env file into safe .env.example content. This transformer preserves
 
 Run tests/test_env_example.py. Output must match fixtures/expected/.env.example and must not include input values.
 
-## Commercial Terms
+## Licence
 
-Price: $0 / 0 credits. Free commercial use for personal or internal team workflows. Do not resell or redistribute the package as-is.
+This GitHub-distributed package is licensed under the MIT License in the repository's LICENSE.md. Preserve its copyright and permission notice as required by that licence.

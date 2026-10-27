@@ -33,6 +33,6 @@ Inventory tech-debt comments across source files. This is a detector and reporti
 
 Run tests/test_todo_fixme.py. Risky fixture must produce findings and clean fixture must produce zero findings.
 
-## Commercial Terms
+## Licence
 
-Price: $0 / 0 credits. Free commercial use for personal or internal team workflows. Do not resell or redistribute the package as-is.
+This GitHub-distributed package is licensed under the MIT License in the repository's LICENSE.md. Preserve its copyright and permission notice as required by that licence.
