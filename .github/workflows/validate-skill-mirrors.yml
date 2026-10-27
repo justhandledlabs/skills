@@ -18,3 +18,5 @@ jobs:
         run: python scripts/check_skill_mirrors.py
       - name: Verify Env Doctor safety contract
         run: python scripts/check_env_doctor_safety.py
+      - name: Verify metadata and diagnostic authority contracts
+        run: python scripts/check_validation_contract.py

@@ -6,11 +6,8 @@ metadata:
   author: JustHandled Labs
   version: 1.0.0
   price: $0
-  credits: 0
-  triggers:
-    - make an env example
-    - redact my .env
-    - create .env.example
+  credits: "0"
+  triggers: "make an env example; redact my .env; create .env.example"
 ---
 
 # Env Example Generator

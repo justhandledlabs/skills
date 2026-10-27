@@ -5,11 +5,7 @@ license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs
-  triggers:
-  - write a cold email
-  - outreach to
-  - generate email
-  - draft prospecting email
+  triggers: "write a cold email; outreach to; generate email; draft prospecting email"
 ---
 # Outreach Writer
 
