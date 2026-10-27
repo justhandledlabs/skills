@@ -6,11 +6,8 @@ metadata:
   author: JustHandled Labs
   version: 1.0.0
   price: $0
-  credits: 0
-  triggers:
-    - list the TODOs in my repo
-    - find tech debt comments
-    - where are the FIXMEs
+  credits: "0"
+  triggers: "list the TODOs in my repo; find tech debt comments; where are the FIXMEs"
 ---
 
 # TODO FIXME Extractor

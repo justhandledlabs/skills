@@ -5,11 +5,7 @@ license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs
-  triggers:
-  - analyze pipeline
-  - generate pipeline report
-  - forecast from CSV
-  - sales report
+  triggers: "analyze pipeline; generate pipeline report; forecast from CSV; sales report"
 ---
 # Pipeline Reporter
 
