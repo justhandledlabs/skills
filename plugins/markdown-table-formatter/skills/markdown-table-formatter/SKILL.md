@@ -34,6 +34,6 @@ Format GitHub-Flavored Markdown tables and convert simple CSV or TSV input into 
 
 Run tests/test_markdown_table.py. Formatted output must match fixtures/expected/clean.md.
 
-## Commercial Terms
+## Licence
 
-Price: $0 / 0 credits. Free commercial use for personal or internal team workflows. Do not resell or redistribute the package as-is.
+This GitHub-distributed package is licensed under the MIT License in the repository's LICENSE.md. Preserve its copyright and permission notice as required by that licence.

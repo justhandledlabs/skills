@@ -36,6 +36,6 @@ Run `python scripts/scan_robots_sitemap.py --help` first. Then use a disposable 
 1. A `robots.txt` containing `User-agent: *` and `Disallow: /` must report `RSV001`.
 2. A `robots.txt` with an absolute `Sitemap:` URL plus a matching, well-formed local `sitemap.xml` must produce zero findings.
 
-## Commercial Terms
+## Licence
 
-Price: $0 / 0 credits. Free commercial use for personal or internal team workflows. Do not resell or redistribute the package as-is.
+This GitHub-distributed package is licensed under the MIT License in the repository's LICENSE.md. Preserve its copyright and permission notice as required by that licence.

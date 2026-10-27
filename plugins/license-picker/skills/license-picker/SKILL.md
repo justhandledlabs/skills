@@ -38,6 +38,6 @@ Run tests/test_license.py. The generated MIT fixture must match fixtures/expecte
 
 This package ships license templates and fills placeholders. It is not legal advice.
 
-## Commercial Terms
+## Licence
 
-Price: $0 / 0 credits. Free commercial use for personal or internal team workflows. Do not resell or redistribute the package as-is.
+This GitHub-distributed package is licensed under the MIT License in the repository's LICENSE.md. Preserve its copyright and permission notice as required by that licence.
