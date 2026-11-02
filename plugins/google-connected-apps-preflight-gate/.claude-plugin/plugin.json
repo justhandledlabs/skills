@@ -1,0 +1,9 @@
+{
+  "name": "google-connected-apps-preflight-gate",
+  "version": "1.0.0",
+  "description": "Run twelve free, source-linked checks before entering an MCP app in Google's Connected Console.",
+  "author": {
+    "name": "JustHandled Labs",
+    "url": "https://justhandledlabs.com"
+  }
+}

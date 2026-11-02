@@ -1,0 +1,157 @@
+{
+  "product": "Google Connected Apps Pre-flight Gate",
+  "profile": "full",
+  "rules_current_as_of": "2026-10-30",
+  "preview_warning": "Google Connected Apps is in preview. Re-check the linked Google documentation before submission.",
+  "verdict": "Ready",
+  "counts": {
+    "pass": 12,
+    "fail": 0,
+    "cant_verify": 0,
+    "total": 12
+  },
+  "findings": [
+    {
+      "id": "GCA-01",
+      "title": "Public HTTPS Streamable HTTP endpoint",
+      "status": "PASS",
+      "priority": 10,
+      "evidence": "POST initialize returned HTTP 200 with a parseable MCP response.",
+      "fix": "No fix indicated. Confirm behavior again in Google Developer Mode.",
+      "source": "https://developers.google.com/connected-apps/mcp/dev-mode"
+    },
+    {
+      "id": "GCA-02",
+      "title": "One global endpoint",
+      "status": "PASS",
+      "priority": 9,
+      "evidence": "Exactly one production endpoint is declared: https://demo-records.example/mcp.",
+      "fix": "No fix indicated.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    },
+    {
+      "id": "GCA-03",
+      "title": "Domain verification token",
+      "status": "PASS",
+      "priority": 9,
+      "evidence": "The exact supplied token is present at the required well-known URL with HTTP 200 and no redirect.",
+      "fix": "No fix indicated.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    },
+    {
+      "id": "GCA-04",
+      "title": "OAuth 2.1 and PKCE S256",
+      "status": "PASS",
+      "priority": 8,
+      "evidence": "The app is explicitly declared unauthenticated, so OAuth and PKCE are not applicable.",
+      "fix": "No OAuth fix indicated. Confirm the server exposes only data and actions suitable for unauthenticated access.",
+      "source": "https://developers.google.com/connected-apps/mcp/oauth"
+    },
+    {
+      "id": "GCA-05",
+      "title": "OAuth discovery metadata",
+      "status": "PASS",
+      "priority": 8,
+      "evidence": "The app is explicitly declared unauthenticated, so OAuth discovery documents are not applicable.",
+      "fix": "No OAuth metadata fix indicated.",
+      "source": "https://developers.google.com/connected-apps/mcp/oauth"
+    },
+    {
+      "id": "GCA-06",
+      "title": "Explicit tool safety hints",
+      "status": "PASS",
+      "priority": 7,
+      "evidence": "All 1 tools expose an explicit readOnlyHint or destructiveHint in supplied tools_snapshot.",
+      "fix": "No annotation fix indicated. Validate actual behavior in Developer Mode.",
+      "source": "https://developers.google.com/connected-apps/mcp/server-optimization"
+    },
+    {
+      "id": "GCA-07",
+      "title": "Tool schemas, names, and descriptions",
+      "status": "PASS",
+      "priority": 7,
+      "evidence": "All 1 tools passed structural schema and metadata checks in supplied tools_snapshot.",
+      "fix": "No automated fix indicated. This is a structural pre-flight, not full JSON Schema conformance proof.",
+      "source": "https://developers.google.com/connected-apps/mcp/server-optimization"
+    },
+    {
+      "id": "GCA-08",
+      "title": "Listing description under 30 words",
+      "status": "PASS",
+      "priority": 6,
+      "evidence": "Description contains 10 words.",
+      "fix": "No fix indicated.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    },
+    {
+      "id": "GCA-09",
+      "title": "Capabilities and example prompts",
+      "status": "PASS",
+      "priority": 6,
+      "evidence": "Listing includes 3 capabilities and 3 prompts; 2 start with the app name.",
+      "fix": "No fix indicated.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    },
+    {
+      "id": "GCA-10",
+      "title": "512px icon under 1MB",
+      "status": "PASS",
+      "priority": 6,
+      "evidence": "PNG icon is 512 by 512 and 2986 bytes.",
+      "fix": "No fix indicated.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    },
+    {
+      "id": "GCA-11",
+      "title": "Terms and Privacy links load",
+      "status": "PASS",
+      "priority": 6,
+      "evidence": "Terms of Service HTTP 200; Privacy Policy HTTP 200.",
+      "fix": "No fix indicated.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    },
+    {
+      "id": "GCA-12",
+      "title": "Category capability coverage",
+      "status": "PASS",
+      "priority": 5,
+      "evidence": "All 1 supplied baseline capabilities for 'Productivity' are present.",
+      "fix": "No fix indicated. Reconfirm the immutable category and its baseline in Connected Console before submission.",
+      "source": "https://developers.google.com/connected-apps/gpc/prerequisites"
+    }
+  ],
+  "observations": {
+    "initialize": {
+      "status": 200,
+      "url": "https://demo-records.example/mcp",
+      "content_type": "application/json",
+      "error": null
+    },
+    "domain_token": {
+      "status": 200,
+      "url": "https://demo-records.example/.well-known/google-connected-apps",
+      "content_type": "application/json",
+      "error": null
+    },
+    "legal_terms_of_service": {
+      "status": 200,
+      "url": "https://demo-records.example/terms",
+      "content_type": "application/json",
+      "error": null
+    },
+    "legal_privacy_policy": {
+      "status": 200,
+      "url": "https://demo-records.example/privacy",
+      "content_type": "application/json",
+      "error": null
+    }
+  },
+  "limitations": [
+    "This read-only pre-flight does not submit, register, approve, or change an MCP server or listing.",
+    "A Ready result does not guarantee Google review approval, ranking, traffic, usage, or sales.",
+    "Live tests are unauthenticated. Supply a sanitized tools_snapshot when authentication prevents tool inspection.",
+    "Schema checks are structural and do not prove complete JSON Schema semantics or tool behavior."
+  ],
+  "receipt_sha256": "11B69D4C68FACD25AA6B5811A7A5E664FE2D57838D7C602BB896DE5F0398379B",
+  "generated_at": "2026-10-31T15:50:11+00:00"
+}

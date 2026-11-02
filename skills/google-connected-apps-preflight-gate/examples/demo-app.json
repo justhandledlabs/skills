@@ -1,0 +1,55 @@
+{
+  "app_name": "Demo Records",
+  "endpoint": "https://demo-records.example/mcp",
+  "declared_endpoints": [
+    "https://demo-records.example/mcp"
+  ],
+  "expected_verification_token": "demo-token-2026",
+  "auth": {
+    "mode": "none"
+  },
+  "listing": {
+    "description": "Demo Records finds approved project records and prepares cited summaries.",
+    "capabilities": [
+      "Find approved records",
+      "Summarize selected records",
+      "Cite source records"
+    ],
+    "example_prompts": [
+      "Demo Records, find the latest approved project brief.",
+      "Demo Records, summarize the approved decisions for this project.",
+      "Use Demo Records to cite the source records for this summary."
+    ],
+    "icon": "demo-icon.png",
+    "terms_url": "https://demo-records.example/terms",
+    "privacy_url": "https://demo-records.example/privacy",
+    "category": "Productivity",
+    "category_required_capabilities": [
+      "Find approved records"
+    ]
+  },
+  "tools_snapshot": {
+    "tools": [
+      {
+        "name": "find_approved_records",
+        "description": "Find approved project records matching the supplied query.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "query": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "query"
+          ]
+        },
+        "annotations": {
+          "readOnlyHint": true,
+          "destructiveHint": false
+        }
+      }
+    ]
+  }
+}
+
