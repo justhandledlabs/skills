@@ -51,8 +51,8 @@ def valid_packet(icon_name):
             "description": "Demo Records finds approved project records and prepares cited summaries.",
             "capabilities": ["Find approved records", "Summarize selected records", "Cite source records"],
             "example_prompts": [
-                "Demo Records, find the latest approved project brief.",
-                "Demo Records, summarize the approved decisions for this project.",
+                "@Demo Records, find the latest approved project brief.",
+                "@Demo Records, summarize the approved decisions for this project.",
                 "Use Demo Records to cite the source records for this summary.",
             ],
             "icon": icon_name,
@@ -71,6 +71,23 @@ def valid_packet(icon_name):
 
 
 class PreflightTests(unittest.TestCase):
+    def test_prompt_openings(self):
+        for start, expected in [('@Demo Records', 'PASS'), ('Demo Records', 'FAIL'), ('@Demo RecordsPlus', 'FAIL')]:
+            with self.subTest(start=start):
+                packet = valid_packet('icon.png')
+                packet['listing']['example_prompts'][:2] = [start + ', find a record.', start + ' summarize a record.']
+                self.assertEqual(expected, gate.check_capabilities_prompts(packet).status)
+
+    def test_opening_mentions_do_not_count_as_natural(self):
+        packet = valid_packet('icon.png')
+        packet['listing']['example_prompts'][2] = '@Demo Records show the record.'
+        self.assertEqual('FAIL', gate.check_capabilities_prompts(packet).status)
+
+    def test_size_limit_is_inclusive(self):
+        for size, expected in [(1_000_000, 'PASS'), (1_048_576, 'PASS'), (1_048_577, 'FAIL')]:
+            with self.subTest(size=size), mock.patch.object(gate, 'image_info', return_value=('PNG',512,512,size)):
+                self.assertEqual(expected, gate.check_icon(valid_packet('icon.png'), Path('input.json')).status)
+
     def test_all_twelve_checks_ready(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

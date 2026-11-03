@@ -94,7 +94,7 @@
     },
     {
       "id": "GCA-10",
-      "title": "512px icon under 1MB",
+      "title": "512px icon up to 1,024 KB",
       "status": "PASS",
       "priority": 6,
       "evidence": "PNG icon is 512 by 512 and 2986 bytes.",

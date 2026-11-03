@@ -16,8 +16,8 @@
       "Cite source records"
     ],
     "example_prompts": [
-      "Demo Records, find the latest approved project brief.",
-      "Demo Records, summarize the approved decisions for this project.",
+      "@Demo Records, find the latest approved project brief.",
+      "@Demo Records, summarize the approved decisions for this project.",
       "Use Demo Records to cite the source records for this summary."
     ],
     "icon": "demo-icon.png",

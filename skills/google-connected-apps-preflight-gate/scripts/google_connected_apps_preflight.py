@@ -182,7 +182,7 @@ def check_endpoint(data, live, client, observations):
         "jsonrpc": "2.0", "id": 1, "method": "initialize",
         "params": {
             "protocolVersion": "2025-03-26", "capabilities": {},
-            "clientInfo": {"name": "jh-connected-apps-preflight", "version": "1.0.0"},
+            "clientInfo": {"name": "jh-connected-apps-preflight", "version": "1.0.1"},
         },
     }
     response = client.json_post(endpoint, payload)
@@ -567,17 +567,22 @@ def check_capabilities_prompts(data):
         problems.append("fewer than 3 non-empty example prompts")
         starts = 0
     else:
-        starts = sum(1 for prompt in prompts if isinstance(prompt, str) and isinstance(app_name, str) and prompt.lower().startswith(app_name.lower()))
+        name = app_name.strip() if isinstance(app_name, str) else ''
+        literal = re.escape(name)
+        opening = re.compile(r'^@' + literal + r'(?![\w-])', re.I)
+        mention = re.compile(r'(?<![\w-])' + literal + r'(?![\w-])', re.I)
+        texts = [p.strip() for p in prompts if isinstance(p, str)]
+        starts = sum(bool(name and opening.search(p)) for p in texts)
         if starts < 2:
             problems.append(f"only {starts} prompt(s) start with the app name")
-        natural = sum(1 for prompt in prompts if isinstance(prompt, str) and isinstance(app_name, str) and app_name.lower() in prompt.lower() and not prompt.lower().startswith(app_name.lower()))
+        natural = sum(bool(name and not opening.search(p) and not mention.match(p) and mention.search(p)) for p in texts)
         if natural < 1:
             problems.append("no prompt mentions the app name naturally after the opening")
     if problems:
         return finding(
             "GCA-09", "Capabilities and example prompts", "FAIL", 6,
             "; ".join(problems) + ".",
-            "Provide at least 3 capabilities and 3 prompts: 2 prompts starting with the exact app name and 1 mentioning it naturally later.", DOCS["endpoint"]
+            "Provide at least 3 capabilities and 3 prompts: 2 prompts starting with @ followed by the exact app name and 1 mentioning it naturally later.", DOCS["endpoint"]
         )
     return finding(
         "GCA-09", "Capabilities and example prompts", "PASS", 6,
@@ -611,18 +616,18 @@ def image_info(path):
 def check_icon(data, input_path):
     icon = get_nested(data, "listing", "icon")
     if not isinstance(icon, str) or not icon:
-        return finding("GCA-10", "512px icon under 1MB", "FAIL", 6, "No local icon path was supplied.", "Supply a 512 by 512 PNG or JPEG smaller than 1MB.", DOCS["endpoint"])
+        return finding("GCA-10", "512px icon up to 1,024 KB", "FAIL", 6, "No local icon path was supplied.", "Supply a 512 by 512 PNG or JPEG no larger than 1,024 KB.", DOCS["endpoint"])
     path = Path(icon)
     if not path.is_absolute():
         path = input_path.parent / path
     try:
         fmt, width, height, size = image_info(path)
     except (OSError, ValueError, struct.error) as exc:
-        return finding("GCA-10", "512px icon under 1MB", "FAIL", 6, f"Icon could not be validated: {exc}.", "Use a readable 512 by 512 PNG or JPEG smaller than 1MB.", DOCS["endpoint"])
-    ok = width == 512 and height == 512 and size < 1_000_000
+        return finding("GCA-10", "512px icon up to 1,024 KB", "FAIL", 6, f"Icon could not be validated: {exc}.", "Use a readable 512 by 512 PNG or JPEG no larger than 1,024 KB.", DOCS["endpoint"])
+    ok = width == 512 and height == 512 and size <= 1024 * 1024
     status = "PASS" if ok else "FAIL"
-    fix = "No fix indicated." if ok else "Resize to exactly 512 by 512 and compress below 1,000,000 bytes."
-    return finding("GCA-10", "512px icon under 1MB", status, 6, f"{fmt} icon is {width} by {height} and {size} bytes.", fix, DOCS["endpoint"])
+    fix = "No fix indicated." if ok else "Resize to exactly 512 by 512 and compress to at most 1,048,576 bytes."
+    return finding("GCA-10", "512px icon up to 1,024 KB", status, 6, f"{fmt} icon is {width} by {height} and {size} bytes.", fix, DOCS["endpoint"])
 
 
 def check_legal(data, live, client, observations):

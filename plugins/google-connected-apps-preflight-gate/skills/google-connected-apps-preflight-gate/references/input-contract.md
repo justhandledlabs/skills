@@ -18,8 +18,8 @@ Save one UTF-8 JSON object. Do not include credentials, tokens, cookies, client 
     "description": "Example App finds approved project records and prepares cited summaries.",
     "capabilities": ["Find project records", "Summarize approved records", "Cite source records"],
     "example_prompts": [
-      "Example App, find the latest approved project brief.",
-      "Example App, summarize the approved decisions for this project.",
+      "@Example App, find the latest approved project brief.",
+      "@Example App, summarize the approved decisions for this project.",
       "Use Example App to cite the source records for this summary."
     ],
     "icon": "icon.png",

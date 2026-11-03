@@ -1,5 +1,7 @@
 ---
 name: google-connected-apps-preflight-gate
+metadata:
+  version: "1.0.1"
 description: Audit an MCP server and Connected Apps listing for Google's preview submission requirements. Use before entering an app in Connected Console, when diagnosing a rejected or incomplete setup, or when checking endpoint transport, domain verification, OAuth discovery, tool annotations and schemas, listing metadata, legal links, and category capability coverage. This is a read-only pre-flight, not a submission or approval guarantee.
 ---
 

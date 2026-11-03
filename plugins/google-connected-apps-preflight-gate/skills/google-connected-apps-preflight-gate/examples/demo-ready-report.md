@@ -80,7 +80,7 @@ Listing includes 3 capabilities and 3 prompts; 2 start with the app name.
 
 **Source:** https://developers.google.com/connected-apps/gpc/prerequisites
 
-### PASS | GCA-10 | 512px icon under 1MB
+### PASS | GCA-10 | 512px icon up to 1,024 KB
 
 PNG icon is 512 by 512 and 2986 bytes.
 
@@ -115,7 +115,7 @@ All 1 supplied baseline capabilities for 'Productivity' are present.
 - [x] GCA-07 Tool schemas, names, and descriptions: PASS
 - [x] GCA-08 Listing description under 30 words: PASS
 - [x] GCA-09 Capabilities and example prompts: PASS
-- [x] GCA-10 512px icon under 1MB: PASS
+- [x] GCA-10 512px icon up to 1,024 KB: PASS
 - [x] GCA-11 Terms and Privacy links load: PASS
 - [x] GCA-12 Category capability coverage: PASS
 
