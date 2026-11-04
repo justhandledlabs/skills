@@ -6,11 +6,8 @@ metadata:
   author: JustHandled Labs
   version: 1.0.0
   price: $0
-  credits: 0
-  triggers:
-    - fix my markdown table
-    - align this table
-    - csv to markdown table
+  credits: "0"
+  triggers: "fix my markdown table; align this table; csv to markdown table"
 ---
 
 # Markdown Table Formatter

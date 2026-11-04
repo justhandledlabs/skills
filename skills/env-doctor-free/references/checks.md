@@ -2,6 +2,8 @@
 
 Use this reference for language-specific diagnosis and framework `.env` validation.
 
+All setup, installation, service-start and repair commands below are user-run recommendations only. Do not execute them during diagnosis. The read-only authority boundary in SKILL.md takes precedence; separately requested remediation needs explicit approval of its target and effects. Inspect permission metadata without creating write probes.
+
 ## Universal Checks
 
 Run these before changing application code:

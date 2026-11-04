@@ -6,11 +6,8 @@ metadata:
   author: JustHandled Labs
   version: 1.0.0
   price: $0
-  credits: 0
-  triggers:
-    - add a license to my project
-    - create a LICENSE file
-    - which open source license
+  credits: "0"
+  triggers: "add a license to my project; create a LICENSE file; which open source license"
 ---
 
 # License Picker
