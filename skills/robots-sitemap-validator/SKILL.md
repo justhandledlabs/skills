@@ -6,11 +6,8 @@ metadata:
   author: JustHandled Labs
   version: 1.0.2
   price: $0
-  credits: 0
-  triggers:
-    - check my robots.txt
-    - validate my sitemap
-    - is my site crawlable
+  credits: "0"
+  triggers: "check my robots.txt; validate my sitemap; is my site crawlable"
 ---
 
 # Robots Sitemap Validator

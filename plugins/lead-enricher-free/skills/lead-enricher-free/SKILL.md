@@ -5,11 +5,7 @@ license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs
-  triggers:
-  - enrich this company
-  - find decision makers at
-  - who works at
-  - build a lead profile
+  triggers: "enrich this company; find decision makers at; who works at; build a lead profile"
 ---
 # Lead Enricher
 

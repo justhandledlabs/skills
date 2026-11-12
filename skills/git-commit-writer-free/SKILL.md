@@ -5,11 +5,7 @@ license: MIT
 metadata:
   version: 1.0.0
   author: JustHandled Labs
-  triggers:
-  - write commit message
-  - generate commit
-  - what should my commit say
-  - git add
+  triggers: "write commit message; generate commit; what should my commit say; git add"
 ---
 # Git Commit Writer
 
