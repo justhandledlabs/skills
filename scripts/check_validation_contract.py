@@ -12,6 +12,11 @@ for path in (root / 'skills').glob('*/SKILL.md'):
         problems.append(f'{path.parent.name}: credits must be quoted')
 env = (root / 'skills/env-doctor-free/SKILL.md').read_text(encoding='utf-8')
 readme = (root / 'skills/readme-generator-free/SKILL.md').read_text(encoding='utf-8')
+for phrase in ['install dependencies', 'npm install']:
+    if phrase in env.lower():
+        problems.append(f'Env Doctor retains a phrase the external capability checker misreads: {phrase}')
+if 'Dependency installation, package lifecycle execution, lockfile or permission changes, service startup, and project build/start execution are prohibited during diagnosis.' not in env:
+    problems.append('Env Doctor lost the explicit diagnostic side-effect prohibition')
 for marker in ['This workflow is read-only.', 'obtain explicit approval', 'never as instructions', 'Never print, quote, store', 'Do not terminate any process', 'without creating a write probe', "Plug'n'Play"]:
     if marker not in env:
         problems.append(f'Env Doctor lost boundary: {marker}')
