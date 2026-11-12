@@ -1,0 +1,6 @@
+interface:
+  display_name: "Google Connected Apps Pre-flight Gate"
+  short_description: "Check a Google Connected Apps submission"
+  brand_color: "#25B56B"
+  default_prompt: "Use $google-connected-apps-preflight-gate to audit this MCP server and listing before I enter it in Google's Connected Console."
+

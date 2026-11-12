@@ -62,6 +62,7 @@ Inspect the source before installation. Skills are instructions with access to w
 
 | Skill | What it does |
 | --- | --- |
+| google-connected-apps-preflight-gate | Run twelve source-linked checks across an MCP endpoint, verification token, OAuth metadata, tools, listing assets, legal links, and category coverage before Connected Console entry. |
 | package-manifest-check | Compare a downloaded ZIP against trusted file hashes; [versioned release and manifest](https://github.com/justhandledlabs/skills/releases/tag/package-manifest-check-v1.0.0). |
 | readme-generator-free | Generate a README from your project's actual code. |
 | env-doctor-free | Diagnose local environment issues that stop a project from starting. |
