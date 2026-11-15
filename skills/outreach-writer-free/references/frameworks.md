@@ -2,6 +2,8 @@
 
 Use this reference when selecting or applying PAS, MEDDIC, or Challenger for Outreach Writer.
 
+All framework CTA examples below are illustrative, not defaults or authority to invent an ask. Use the user's supplied CTA; if absent, follow SKILL.md's clarification rule. Conditional pain hypotheses must not become factual claims.
+
 ## PAS
 
 PAS means Problem, Agitate, Solution.
