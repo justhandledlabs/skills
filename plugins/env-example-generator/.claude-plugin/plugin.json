@@ -1,7 +1,7 @@
 {
   "name": "env-example-generator",
-  "version": "1.0.0",
-  "description": "Turn a .env into a shareable .env.example with keys preserved and values stripped.",
+  "version": "1.0.1",
+  "description": "Create key-only dotenv examples; omit source comments and values, reject unsupported input, and review key names before sharing.",
   "author": {
     "name": "JustHandled Labs",
     "url": "https://justhandledlabs.com"
